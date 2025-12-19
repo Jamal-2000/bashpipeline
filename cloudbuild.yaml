@@ -14,12 +14,11 @@ steps:
   waitFor: [step-1]
 
 - name: 'ubuntu'
-  args: ['bash', '-c', 'echo Hello! step 3']
+  args: ['bash', '-c', 'echo Hello! step 4']
   waitFor: [step-2, step-3]
 
 - name: 'ubuntu'
-  args: ['bash', '-c', 'echo Hello! step 3']
-  waitFor: []
+  args: ['bash', '-c', 'echo Hello! step 5']
 
 options:
   logging: CLOUD_LOGGING_ONLY
