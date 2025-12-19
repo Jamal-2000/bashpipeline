@@ -1,12 +1,15 @@
 steps:
 - name: 'ubuntu'
   args: ['bash', '-c', 'echo Hello! step 1']
+  id: 'step-1'
 
 - name: 'ubuntu'
   args: ['bash', '-c', 'echo Hello! step 2']
-  waitFor: ['-']
+  waitFor: ['step-1']
+
 - name: 'ubuntu'
   args: ['bash', '-c', 'echo Hello! step 3']
+  waitFor: ['step-1']
 
 options:
   logging: CLOUD_LOGGING_ONLY
