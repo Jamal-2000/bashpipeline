@@ -4,7 +4,7 @@ steps:
 
 - name: 'ubuntu'
   args: ['bash', '-c', 'echo Hello! step 2']
-
+  waitFor: ['-']
 - name: 'ubuntu'
   args: ['bash', '-c', 'echo Hello! step 3']
 
