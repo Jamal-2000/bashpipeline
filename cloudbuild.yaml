@@ -4,6 +4,7 @@ steps:
 
 - name: 'ubuntu'
   args: ['sleep', '20s']
+  timeout: '10s'
 
 - name: 'ubuntu'
   args: ['bash', '-c', 'echo Hello! step 3']
