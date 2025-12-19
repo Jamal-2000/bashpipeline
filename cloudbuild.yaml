@@ -5,10 +5,12 @@ steps:
 
 - name: 'ubuntu'
   args: ['bash', '-c', 'echo Hello! step 2']
+  id: 'step-2'
   waitFor: [step-1]
 
 - name: 'ubuntu'
   args: ['bash', '-c', 'echo Hello! step 3']
+  id: 'step-3'
   waitFor: [step-1]
 
 - name: 'ubuntu'
