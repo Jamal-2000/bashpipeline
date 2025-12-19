@@ -9,6 +9,7 @@ steps:
 - name: 'ubuntu'
   args: ['bash', '-c', 'echo Hello! step 3']
 
+logsBucket: gs://build-logs-new
 
 options:
-  logging: CLOUD_LOGGING_ONLY
+  logging: GCS_ONLY
